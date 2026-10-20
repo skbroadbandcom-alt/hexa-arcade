@@ -172,7 +172,7 @@
     padding: 12px 14px;
     touch-action: none;
   }
-  /* Direction keys stretch to fill the row (the colour-swap key sits between ▼ and ▶), so both thumbs reach them easily */
+  /* Direction keys stretch to fill the row (the colour-swap key sits at the far right), so both thumbs reach them easily */
   .dir { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; }
   .dir .key:not(.round) { flex: 1; width: auto; height: 64px; font-size: 24px; }
   .key {
@@ -235,8 +235,8 @@
     <div class="dir">
       <button class="key" data-act="left" aria-label="왼쪽">◀</button>
       <button class="key" data-act="down" aria-label="아래">▼</button>
-      <button class="key round a" data-act="rotate" aria-label="색 바꾸기">바꾸기<small>A</small></button>
       <button class="key" data-act="right" aria-label="오른쪽">▶</button>
+      <button class="key round a" data-act="rotate" aria-label="색 바꾸기">바꾸기<small>A</small></button>
     </div>
   </footer>
 </div>
