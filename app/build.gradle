@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.hexaarcade.game'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.hexaarcade.game'
+        minSdk 26
+        targetSdk 34
+        // CI passes the run number so every build installs over the previous one
+        versionCode = Integer.parseInt(System.getenv('VERSION_CODE') ?: '1')
+        versionName = "1.${System.getenv('VERSION_CODE') ?: '0'}"
+    }
+
+    // A fixed key in the repo keeps the signature stable, so updates install over
+    // the old app without wiping the saved high score.
+    signingConfigs {
+        arcade {
+            storeFile file('hexaarcade.p12')
+            storeType 'pkcs12'
+            storePassword 'blockarcade'
+            keyAlias 'blockarcade'
+            keyPassword 'blockarcade'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.arcade
+        }
+        debug {
+            signingConfig signingConfigs.arcade
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

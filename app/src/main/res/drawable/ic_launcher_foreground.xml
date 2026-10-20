@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Three stacked hexagon jewels (red, yellow, cyan), inside the 66dp adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#E8344E" android:pathData="M47,24h14l7,9l-7,9h-14l-7,-9z" />
+    <path android:fillColor="#FF8FA0" android:pathData="M47,24h14l7,9h-28z" />
+    <path android:fillColor="#FFCF3A" android:pathData="M47,45h14l7,9l-7,9h-14l-7,-9z" />
+    <path android:fillColor="#FFE9A6" android:pathData="M47,45h14l7,9h-28z" />
+    <path android:fillColor="#33D6E8" android:pathData="M47,66h14l7,9l-7,9h-14l-7,-9z" />
+    <path android:fillColor="#A6F0F7" android:pathData="M47,66h14l7,9h-28z" />
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/cabinet</item>
+        <item name="android:statusBarColor">@color/cabinet</item>
+        <item name="android:navigationBarColor">@color/cabinet</item>
+    </style>
+    <color name="cabinet">#0B0A1A</color>
+</resources>
